@@ -132,6 +132,14 @@ app.get('/employees', (req, res) => {
     .then( employees => res.send(employees) );
 });
 
+// PlaylistTrack
+app.get('/playlist-tracks', (req,res) => {
+  models.PlaylistTrack.findAll()
+    .then( playlistTracks => res.send(playlistTracks) );
+});
+// InvoiceLine
+// Track
+
 // Start server listening
 app.listen(PORT, () => {
   console.log(`App listening on port ${PORT}`);
