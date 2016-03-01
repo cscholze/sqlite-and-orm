@@ -63,7 +63,6 @@ app.get('/albums', (req, res) => {
     .then( albums => res.send(albums) );
 });
 
-
 // Invoices
 app.get('/invoices', (req, res) => {
   models.Invoice.findAll({
@@ -137,8 +136,18 @@ app.get('/playlist-tracks', (req,res) => {
   models.PlaylistTrack.findAll()
     .then( playlistTracks => res.send(playlistTracks) );
 });
+
 // InvoiceLine
+app.get('/invoice-lines', (req,res) => {
+  models.InvoiceLine.findAll()
+    .then( invoiceLines => res.send(invoiceLines) );
+});
+
 // Track
+app.get('/tracks', (req,res) => {
+  models.Tracks.findAll()
+    .then( tracks => res.send(tracks) );
+});
 
 // Start server listening
 app.listen(PORT, () => {
