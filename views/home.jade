@@ -1,9 +1,29 @@
 extends layout
 
 block content
-  h1 A list of queries
+  h1 A list of queries for the Chinook PostgreSql database
   ol
     li
-      a link1
+      a(href="/genres") Get all genre info
     li
-      a link2
+      a(href="/mediatypes") Get all media types info
+    li
+      a(href="/artists") Get all artists info
+    li
+      a(href="/playlists") Get all playlists info
+    li
+      a(href="/albums") Get all albums with artist info
+    li
+      a(href="/invoices") Get all invoices with customer info
+    li
+      a(href="/invoices/32") Get single invoice by InvoiceId
+    li
+      a(href="/invoices/14/customer") **NOT WORKING** Get all invoices for single customer
+    li
+      a(href="/customers") Get all customers info
+    li
+      a(href="/customers/14") Get single customer info by ID (currently hardcoded CustomerId=14)
+    li
+      a(href="/customers/14/invoices") Get all invoices for single customer
+    li
+      a(href="/employees") Get all employees info
