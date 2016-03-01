@@ -20,6 +20,7 @@
   "homepage": "https://github.com/cscholze/sqlite-and-orm#readme",
   "dependencies": {
     "express": "^4.13.4",
+    "jade": "^1.11.0",
     "pg": "^4.5.1",
     "pg-hstore": "^2.3.2",
     "sequelize": "^3.19.3"
