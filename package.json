@@ -23,7 +23,7 @@
     "jade": "^1.11.0",
     "pg": "^4.5.1",
     "pg-hstore": "^2.3.2",
-    "sequelize": "^3.19.3"
+    "sequelize": "^6.3.5"
   },
   "devDependencies": {
     "eslint": "^2.2.0",
